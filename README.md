@@ -4,9 +4,9 @@ Ce projet a pour objectif d'automatiser le reporting et le monitoring des risque
 
 ## Fonctionnalités Principales :
 
-- **Automatisation du Reporting :** Générez automatiquement des rapports détaillés sur les ratios avant et après chaque transaction.
+- **Automatisation du Reporting :** Générez automatiquement des rapports détaillés sur les ratios avant et après chaque deal.
 
-- **Monitoring des Risques :** Suivez en temps réel les positions en portefeuille pour évaluer les risques potentiels avant la conclusion d'une transaction.
+- **Monitoring des Risques :** Suivi des positions en portefeuille de chaque fonds pour évaluer les risques potentiels avant la conclusion de chaque deal.
 
 - **Requête Quotidienne SAS :** Utilisez des requêtes SAS pour extraire les positions en portefeuille depuis le datamart à la veille du contrôle.
 
