@@ -252,7 +252,7 @@ Sub lancement_controle()
        On Error Resume Next
        Set Col_Investisseur = table_template.ListColumns("INVESTISSEUR")
        Set Col_Abbreviation_Invest = table_template.ListColumns("ABREVIATION")
-       Set Col_Vehicule = table_Direct.ListColumns("Véhicule SWEN")
+       Set Col_Vehicule = table_Direct.ListColumns("Véhicule")
        Set Col_Abbreviation_Direct = table_Direct.ListColumns("Col_ABREVIATION_direct")
        On Error GoTo 0
        If Not Col_Investisseur Is Nothing And Not Col_Abbreviation_Invest Is Nothing _
@@ -288,7 +288,7 @@ Sub lancement_controle()
        On Error Resume Next
        Set Col_Investisseur2 = table_template.ListColumns("INVESTISSEUR")
        Set Col_Abbreviation_Invest = table_template.ListColumns("ABREVIATION")
-       Set Col_Vehicule = table_Indirect.ListColumns("Véhicule SWEN")
+       Set Col_Vehicule = table_Indirect.ListColumns("Véhicule")
        Set Col_Abbreviation_Direct = table_Indirect.ListColumns("Col_ABREVIATION")
        On Error GoTo 0
        If Not Col_Investisseur2 Is Nothing And Not Col_Abbreviation_Invest Is Nothing _
@@ -778,7 +778,7 @@ On Error GoTo 0
             Dim col As ListColumn
             Set col = copiedTable.ListColumns(x)
             '
-            If col.Name <> "Véhicule SWEN" And col.Name <> "Entreprise" And col.Name <> "Nom eFront" And _
+            If col.Name <> "Véhicule" And col.Name <> "Entreprise" And col.Name <> "Nom eFront" And _
             col.Name <> "Deal Name" And col.Name <> "Part Verte?" And col.Name <> "Score NEC" And col.Name <> "Date de comité" Then
                col.Delete
             End If
@@ -838,7 +838,7 @@ On Error GoTo 0
 
             Set col = copiedTable.ListColumns(x)
             '
-            If col.Name <> "Véhicule SWEN" And col.Name <> "Fonds" And col.Name <> "Nom du Deal" And _
+            If col.Name <> "Véhicule" And col.Name <> "Fonds" And col.Name <> "Nom du Deal" And _
             col.Name <> "Part Verte?" And col.Name <> "Catégorisation finale et vérifiée de l’approche ESG du fonds " _
             And col.Name <> "Fonds à Impact?" And col.Name <> "Date de comité" Then
                col.Delete
@@ -3734,7 +3734,7 @@ Sub SaveFiles()
 
         DeleteColumnByColumnName table_transparisation, "TYPE_INVESTISSEMENT_FONDS"
 
-       '/ dup_table_2 lastrow dup_table_2_AD_SWEN_PE_6
+       '/ dup_table_2 lastrow dup_table_2_AD_Funds_Manager_PE_6
         Set dup_table = ws_data.ListObjects(2)
 
         lastRow_table_CoInvest = dup_table.ListRows.Count
