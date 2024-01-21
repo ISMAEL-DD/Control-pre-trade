@@ -1,4 +1,4 @@
-## Automatisation du Reporting et Monitoring des Risques**
+## Automatisation du Reporting et Monitoring des Risques
 
 Ce projet a pour objectif d'automatiser le reporting et le monitoring des risques pour le contrôle pré-trade des ratios d'un gestionnaire d'actifs. Il comprend les fonctionnalités suivantes :
 
